@@ -51,3 +51,50 @@
 //       isClose = false;
 
 // console.log(isChecked || !isClose);
+
+// Задание № 1
+
+// let numberOfFilms = "Сколько фильмов вы уже посмотрели?";
+
+// Задача № 2
+// let personalMovieDB = {
+//   count: numberOfFilms,
+//   movies: {},
+//   actors: {},
+//   genres: [],
+//   privat: false
+// };
+
+// console.log(numberOfFilms, personalMovieDB);
+
+// const answers = [];
+//       answers[0] = 'Один и последних просмотренных фильмов';
+//       answers[1] = 'На сколько оценили его?';
+
+// Привильное решение 1
+
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+
+// Привильное решение 2
+
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
+
+// Привильное решение 3
+
+const a = prompt('Один и последних просмотренных фильмов', ''),
+      b = prompt('На сколько оценили его?', ''),
+      c = prompt('Один и последних просмотренных фильмов', ''),
+      d = prompt('На сколько оценили его?', '');
+
+// Привильное решение 4
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
