@@ -73,28 +73,69 @@
 
 // Привильное решение 1
 
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
 
-// Привильное решение 2
+// // Привильное решение 2
 
-const personalMovieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false
-};
+// const personalMovieDB = {
+//   count: numberOfFilms,
+//   movies: {},
+//   actors: {},
+//   genres: [],
+//   privat: false
+// };
 
-// Привильное решение 3
+// // Привильное решение 3
 
-const a = prompt('Один и последних просмотренных фильмов', ''),
-      b = prompt('На сколько оценили его?', ''),
-      c = prompt('Один и последних просмотренных фильмов', ''),
-      d = prompt('На сколько оценили его?', '');
+// const a = prompt('Один и последних просмотренных фильмов', ''),
+//       b = prompt('На сколько оценили его?', ''),
+//       c = prompt('Один и последних просмотренных фильмов', ''),
+//       d = prompt('На сколько оценили его?', '');
 
-// Привильное решение 4
+// // Привильное решение 4
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
+
+// Урок 13
+
+// if (1) {
+//   console.log("Ok!");
+// } else {
+//   console.log("Error!");
+// }
+
+
+
+// if(num < 49) {
+//   console.log("Error");
+// } else if (num > 100) {
+//   console.log("Много!");
+// } else {
+//   console.log("Ok!");
+// }
+
+// // Тернанрный оператор
+
+// (num === 50) ? console.log("Ok!") : console.log("Error");
+
+// SWITCH
+
+// const num = '50';
+
+// switch (num) {
+//     case '49':
+//         console.log("Неверно!");
+//         break;
+//     case '100':
+//         console.log("Неверно!");
+//         break;
+//     case '51':
+//         console.log("В Точку");
+//         break;
+//     default:
+//       console.log("Не в этот раз!");
+//       break;
+// }
