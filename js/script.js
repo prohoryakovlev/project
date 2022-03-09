@@ -73,17 +73,17 @@
 
 // Привильное решение 1
 
-// const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
 
 // // Привильное решение 2
 
-// const personalMovieDB = {
-//   count: numberOfFilms,
-//   movies: {},
-//   actors: {},
-//   genres: [],
-//   privat: false
-// };
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
 
 // // Привильное решение 3
 
@@ -92,12 +92,43 @@
 //       c = prompt('Один и последних просмотренных фильмов', ''),
 //       d = prompt('На сколько оценили его?', '');
 
-// // Привильное решение 4
+// // // Привильное решение 4
 
 // personalMovieDB.movies[a] = b;
 // personalMovieDB.movies[c] = d;
 
-// console.log(personalMovieDB);
+
+for (let i = 0; i < 2; i++) {
+  const a = prompt('Один и последних просмотренных фильмов', ''),
+        b = prompt('На сколько оценили его?', '');
+
+  if (a != null && b != null && a !='' && b != '' && a.length < 50) {
+    personalMovieDB.movies[a] = b;
+    console.log('done');
+  } else {
+    console.log('error');
+    i --;
+  }
+
+  personalMovieDB.movies[a] = b;
+}
+
+if (personalMovieDB.count < 10) {
+  console.log("Просмотсрено довольно мало фильмов");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+  console.log("Вы классический зритель");
+} else if (personalMovieDB.count >= 30) {
+  console.log("Вы киноман!");
+} else {
+  console.log("Произошла Ошибка!");
+}
+
+console.log(personalMovieDB);
+
+
+
+
+
 
 // Урок 13
 
@@ -138,4 +169,31 @@
 //     default:
 //       console.log("Не в этот раз!");
 //       break;
+// }
+
+// ЦИКЛЫ
+
+// let num = 50;
+
+// while (num <= 55) {
+//   console.log(num);
+//   num++;
+// }
+
+// ЦИКЛ 2
+
+// do {
+//   console.log(num);
+//   num++;
+// }
+// while (num <= 55);
+
+// ОСНОВНОЙ ЦИКЛ
+
+// for (let i = 1; i < 10; i++) {
+//   if (i === 6) {
+//     // break;
+//     continue;
+//   }
+//   console.log(i);
 // }
