@@ -433,7 +433,7 @@ function compareNum(a, b) {
 // for (let value of arr) {
 //   console.log(value);
 // }
-Сортировка текста!!
+// Сортировка текста!!
 const str = prompt("", "");
 const products = str.split(", ");
 products.sort();
