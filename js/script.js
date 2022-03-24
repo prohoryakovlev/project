@@ -671,53 +671,87 @@
 // console.log(sorted);
 
 // To String
-console.log(typeof(String(null)));
-console.log(typeof(String(4)));
+// console.log(typeof(String(null)));
+// console.log(typeof(String(4)));
 
-// 2
-const num = 5;
+// // 2
+// const num = 5;
 
-console.log("http://vk.com/catalog/" + num);
+// console.log("http://vk.com/catalog/" + num);
 
-const fontSize = 26 + 'px';
+// const fontSize = 26 + 'px';
 
-console.log(fontSize);
+// console.log(fontSize);
 
 // To Number
 // 1
-console.log(typeof(Number('4')));
+// console.log(typeof(Number('4')));
 
-// 2
-console.log(typeof(+ '5'));
+// // 2
+// console.log(typeof(+ '5'));
 
-// 3
-console.log(typeof(parseInt("15px", 10)));
+// // 3
+// console.log(typeof(parseInt("15px", 10)));
 
 
-let answ = +prompt("Hello", "");
+// let answ = +prompt("Hello", "");
 
 // To Boolean
 // 0, '', null, undefined, NaN;
 
 // 1
-let switcher = null;
+// let switcher = null;
 
-if (switcher) {
-  console.log("Working...");
-}
+// if (switcher) {
+//   console.log("Working...");
+// }
 
 
-switcher = 1;
+// switcher = 1;
 
-if (switcher) {
-  console.log("Working...");
-}
+// if (switcher) {
+//   console.log("Working...");
+// }
 
-// 2
-console.log(typeof(Boolean('4')));
+// // 2
+// console.log(typeof(Boolean('4')));
 
-// 3
-console.log(typeof((!!"44444")));
+// // 3
+// console.log(typeof((!!"44444")));
 
-let x = 5;
-alert( x++ );
+// let x = 5;
+// alert( x++ );
+
+// let x = 5; alert( ++x );
+
+// [] + false - null + true;
+// console.log(typeof([] + false - null));
+
+// let y = 1;
+// let x = y = 2;
+// alert(x);
+
+// [ ] + 1 + 2;
+// console.log([ ] + 1 + 2);
+
+// alert( "1"[0] );
+
+// console.log(2 && 1 && null && 0 && undefined);
+// И запинается на лжи
+// Или запинается на правде
+
+// console.log(!!( 1 && 2 ) === (1 && 2));
+
+// alert( null || 2 && 3 || 4 );
+
+// const a = [1, 2, 3];
+// const b = [1, 2, 3];
+
+// alert( +"Infinity" );
+
+// console.log("Ёжик" > "яблоко");
+
+// console.log(0 || "" || 2 || undefined || true || falsе);
+
+
+
